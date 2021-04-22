@@ -311,8 +311,6 @@ public class Functions{
 			Log.e(TAG, LOCALTAG+Log.getStackTraceString(e));
 
 		}
-		Log.d(TAG,LOCALTAG+"allJson is null ? : "+String.valueOf(allJson == null));
-		
 		return allJson;
 	}
 

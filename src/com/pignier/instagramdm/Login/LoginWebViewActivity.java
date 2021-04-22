@@ -26,29 +26,31 @@ public class LoginWebViewActivity extends Activity{
 	DatabaseHelper dbHelper;
 	IGSession igsession;
 	WebView webView;
-	String webViewUrl;
-	private boolean ready = false;
+	private boolean logged = false;
 	private final WebChromeClient webChromeClient = new WebChromeClient();
 
 	private final WebViewClient webViewClient = new WebViewClient() {
-		@Override
-		public void onPageStarted(final WebView view, final String url, final Bitmap favicon) {
-			webViewUrl = url;
-		}
+		//@Override
+		//public void onPageStarted(final WebView view, final String url, final Bitmap favicon) {
+		//	webViewUrl = url;
+		//}
 
 		@Override
 		public void onPageFinished(final WebView view, final String url) {
-			webViewUrl = url;
+			//webViewUrl = url;
+			
+				
 			
 			final String mainCookie = CookieManager.getInstance().getCookie(url);
-
-			if (mainCookie != null && mainCookie.length() != 0){
+			if (mainCookie != null && mainCookie.length() != 0 && ! logged){
+				Log.d(TAG,LOCALTAG+"Page finished");
+				logged = true;
 				String ig_csrf_token = mainCookie.split("csrftoken=")[1].split(";")[0];
 				String ig_session_ID = mainCookie.split("sessionid=")[1].split(";")[0];
-				saveSessionInStorage(new IGSession(ig_session_ID,ig_csrf_token));
-				launchMainActivity();
-			}
-
+				IGSession new_session = new IGSession(ig_session_ID,ig_csrf_token);
+				saveSessionInStorage(new_session);
+				launchMainActivity(new_session);
+			}	
 			
 		}
 	};
@@ -85,10 +87,11 @@ public class LoginWebViewActivity extends Activity{
 		Log.d(TAG,LOCALTAG+"WebView started");
 	}
 
-	public void launchMainActivity(){
+	public void launchMainActivity(IGSession igsession){
 		Log.d(TAG,LOCALTAG+"Main Activity launched");
 		Intent intent = new Intent(this,DirectMessagesActivity.class);
 		intent.putExtra("sender", "login");
+		intent.putExtra("session",igsession.toIntent());
 		startActivity(intent);
 		finish();
 	}

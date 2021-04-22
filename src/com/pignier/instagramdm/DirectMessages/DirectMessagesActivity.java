@@ -94,6 +94,8 @@ public class DirectMessagesActivity extends Activity implements OnItemClickListe
 			startActivity(intentToSend);
 		}
 		if (sender.equals("login")){
+			//String[] credentials = intent.getStringArrayExtra("session");
+			//Log.d(TAG,LOCALTAG+"credentials null ? : "+String.valueOf(credentials));
 			instaSession = new IGSession(intent.getStringArrayExtra("session"));
 		}
 
