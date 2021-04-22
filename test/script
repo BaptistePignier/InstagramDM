@@ -1,0 +1,12 @@
+#!/bin/bash
+rm output.json
+rm Main.class
+
+echo "JAVAC"
+javac Main.java 
+
+echo "JAVA"
+java  Main >> output.json
+
+echo "OPENNING"
+/opt/firefox/firefox output.json
