@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.pignier.instagramdm"
+        android:versionCode="20"
+        android:versionName="2.0">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+
+
+
+    
+
+    <uses-sdk android:targetSdkVersion="29"/>
+
+    <application
+            android:name=".Utils.GlobalApplication"
+            android:allowBackup="true"
+            android:label="@string/myApplicationName"
+            android:icon="@drawable/ic_launcher"
+            android:theme="@style/AppTheme"
+            android:usesCleartextTraffic="true">
+
+        <service
+            android:name=".Network.DMService"
+            android:label="Word service"
+            >
+        </service>
+        
+        <receiver android:name=".Receivers.BootReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        
+        <receiver android:name=".Receivers.Restarter" >
+            <intent-filter>
+                <action android:name="RestartService" />
+            </intent-filter>
+        </receiver>
+
+
+
+        <activity android:name="com.pignier.instagramdm.DirectMessages.DirectMessagesActivity"
+                  android:configChanges="orientation|screenSize">
+        </activity>
+        
+        <activity android:name="com.pignier.instagramdm.Thread.ThreadActivity"
+                  android:configChanges="orientation|screenSize">
+        </activity>
+
+        <activity android:name="com.pignier.instagramdm.Login.LoginMainActivity" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.pignier.instagramdm.Login.LoginWebViewActivity"
+                  android:configChanges="orientation|screenSize">
+        </activity>
+    </application>
+</manifest>

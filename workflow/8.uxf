@@ -1,0 +1,234 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><help_text></help_text><element><id>Relation</id><coordinates><x>65</x><y>170</y><w>170</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>UMLSpecialState</id><coordinates><x>55</x><y>180</y><w>20</w><h>20</h></coordinates><panel_attributes>type=initial</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>335</x><y>230</y><w>130</w><h>40</h></coordinates><panel_attributes>start connection
+type=sender
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>125</x><y>670</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>UMLObject</id><coordinates><x>125</x><y>140</y><w>570</w><h>420</h></coordinates><panel_attributes>Login Activity
+valign=top</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>275</x><y>440</y><w>140</w><h>210</h></coordinates><panel_attributes>LMInterface
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>215</x><y>640</y><w>80</w><h>140</h></coordinates><panel_attributes>lt=-&gt;
+result</panel_attributes><additional_attributes>10;120;60;120;60;10</additional_attributes></element><element><id>UMLState</id><coordinates><x>295</x><y>480</y><w>100</w><h>40</h></coordinates><panel_attributes>onConnected
+bg=green</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>295</x><y>580</y><w>100</w><h>40</h></coordinates><panel_attributes>onFailed
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>155</x><y>450</y><w>90</w><h>40</h></coordinates><panel_attributes>Show error
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>225</x><y>480</y><w>90</w><h>150</h></coordinates><panel_attributes>lt=-&gt;
+</panel_attributes><additional_attributes>70;130;10;130;10;10</additional_attributes></element><element><id>UMLState</id><coordinates><x>345</x><y>310</y><w>120</w><h>40</h></coordinates><panel_attributes>OnClick
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>285</x><y>170</y><w>230</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+true</panel_attributes><additional_attributes>210;20;10;20</additional_attributes></element><element><id>UMLState</id><coordinates><x>495</x><y>180</y><w>160</w><h>50</h></coordinates><panel_attributes>Start DirectMessages
+Activity
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>455</x><y>320</y><w>60</w><h>90</h></coordinates><panel_attributes>lt=-&gt;
+</panel_attributes><additional_attributes>10;70;40;70;40;10</additional_attributes></element><element><id>Relation</id><coordinates><x>125</x><y>1060</y><w>30</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-&gt;&gt;</panel_attributes><additional_attributes>10;10;10;70</additional_attributes></element><element><id>UMLState</id><coordinates><x>145</x><y>350</y><w>140</w><h>40</h></coordinates><panel_attributes>create login manager
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>155</x><y>290</y><w>120</w><h>40</h></coordinates><panel_attributes>Start login page
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLObject</id><coordinates><x>135</x><y>260</y><w>170</w><h>150</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>245</x><y>200</y><w>60</w><h>80</h></coordinates><panel_attributes>lt=&lt;-
+false</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>395</x><y>260</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>UMLClass</id><coordinates><x>65</x><y>1130</y><w>210</w><h>240</h></coordinates><panel_attributes>
+IGSession
+
+--
+
+- AccountID: String
+- SessionID: String
+- CsrfToken: String
+
+--
+
++getAccountID(): String
++getSessionID() : String
++getCsrfToken() : String
+
++exctract() : ContentValues
++toIntent() : String []
+
+
+group=35</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>345</x><y>370</y><w>120</w><h>40</h></coordinates><panel_attributes>OnWebView
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>295</x><y>310</y><w>70</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>50;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>295</x><y>370</y><w>70</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>50;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>665</x><y>200</y><w>120</w><h>60</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>100;40;50;40;50;10;10;10</additional_attributes></element><element><id>UMLState</id><coordinates><x>1055</x><y>400</y><w>190</w><h>60</h></coordinates><panel_attributes>Show threads 
+ListView + CursorAdapater
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLObject</id><coordinates><x>1005</x><y>610</y><w>360</w><h>290</h></coordinates><panel_attributes>Thread Activity
+valign=top</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>925</x><y>450</y><w>90</w><h>40</h></coordinates><panel_attributes>On Thread
+Click
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>755</x><y>460</y><w>150</w><h>50</h></coordinates><panel_attributes>Start Thread Activity
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>755</x><y>310</y><w>140</w><h>40</h></coordinates><panel_attributes>create login manager
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLObject</id><coordinates><x>935</x><y>0</y><w>170</w><h>50</h></coordinates><panel_attributes>DirectMessages 
+Manager
+valign=center
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>755</x><y>380</y><w>140</w><h>50</h></coordinates><panel_attributes>get Threads from
+Web
+type=sender
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLObject</id><coordinates><x>745</x><y>300</y><w>170</w><h>150</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>945</x><y>80</y><w>150</w><h>40</h></coordinates><panel_attributes>get Threads from
+Web
+type=receiver
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLGeneric</id><coordinates><x>1165</x><y>20</y><w>140</w><h>190</h></coordinates><panel_attributes>DMInterface
+bg=gray</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>1185</x><y>50</y><w>100</w><h>40</h></coordinates><panel_attributes>onConnected
+bg=green</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>1185</x><y>150</y><w>100</w><h>40</h></coordinates><panel_attributes>onFailed
+bg=red</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>1165</x><y>260</y><w>90</w><h>40</h></coordinates><panel_attributes>Show error
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>765</x><y>170</y><w>90</w><h>40</h></coordinates><panel_attributes>OnDisconnect
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>85</x><y>100</y><w>700</w><h>110</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;90;10;20;640;20;640;80;680;80</additional_attributes></element><element><id>Relation</id><coordinates><x>845</x><y>170</y><w>60</w><h>40</h></coordinates><panel_attributes>lt=-&gt;
+</panel_attributes><additional_attributes>10;20;40;20</additional_attributes></element><element><id>UMLState</id><coordinates><x>495</x><y>260</y><w>160</w><h>50</h></coordinates><panel_attributes>Save new session
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>385</x><y>320</y><w>180</w><h>200</h></coordinates><panel_attributes>lt=-&gt;
+</panel_attributes><additional_attributes>10;180;160;180;160;10</additional_attributes></element><element><id>UMLObject</id><coordinates><x>475</x><y>160</y><w>200</w><h>170</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLObject</id><coordinates><x>45</x><y>850</y><w>350</w><h>260</h></coordinates><panel_attributes>
+group=35</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLObject</id><coordinates><x>45</x><y>850</y><w>170</w><h>50</h></coordinates><panel_attributes>DBHelper
+valign=center
+bg=yellow
+group=35</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>55</x><y>1020</y><w>160</w><h>50</h></coordinates><panel_attributes>Save new session
+group=35</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>225</x><y>860</y><w>160</w><h>50</h></coordinates><panel_attributes>Save threads
+group=35</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLObject</id><coordinates><x>935</x><y>0</y><w>390</w><h>130</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>965</x><y>250</y><w>160</w><h>50</h></coordinates><panel_attributes>Save threads
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>375</x><y>870</y><w>320</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-&gt;&gt;</panel_attributes><additional_attributes>10;10;50;10;50;70;300;70</additional_attributes></element><element><id>UMLClass</id><coordinates><x>675</x><y>920</y><w>340</w><h>490</h></coordinates><panel_attributes>
+ThreadModel
+
+--
+
+- title: String
+- profilPic: Bitmap
+- has_newer: boolean
+- is_group: boolean
+- messages: ArrayList&lt;MessageModel&gt;  
+- insta_ID: String
+- isRequested: boolean
+--
+Thank to CursorAdapter, not all getter are mandatory
+
++getTitle(): String
++getProfilPic() : Bitmap
++getMessages() : ArrayList&lt;MessageModel&gt;
++getInstaID(): String
++getLastItemID(): String
++extract(): ContentValues
+
++setTitle(title: String)
++setProfilPic(profilPic: Bitmap)
++setHasNewer(has_newer: boolean)
++setIs_group(is_group: boolean)
++setMessages(messages: ArrayList&lt;MessageModel&gt;)
++setInstaID(insta_ID: String)
++setIsRequested(status: boolean)
+
+
+
+
+
+group=35</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>635</x><y>1140</y><w>60</w><h>30</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;40;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>435</x><y>970</y><w>210</w><h>240</h></coordinates><panel_attributes>
+MessageModel
+
+--
+
+- type: String
+- owner: String
+- itemID: String
+- text: String
+- image: Bitmap
+- audio: byte[]
+- audio_played: boolean
+- threadID: String
+
+--
+Thank to CursorAdapter, not all getter are mandatory
+
++getType(): String
++getItemID() : String
++getAudio() : byte[]
++extract(): ContentValues
+
++setType(type: String)
++setOwner(owner: String)
++setItemID(itemID: String)
++setText(text: String)
++setImage(image: Bitmap)
++setAudio(audio: byte[])
++set_audio_played(bool: boolean)
++setThreadID(id: String)
+
+
+
+
+
+
+group=35</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLObject</id><coordinates><x>455</x><y>610</y><w>520</w><h>300</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLObject</id><coordinates><x>455</x><y>610</y><w>170</w><h>50</h></coordinates><panel_attributes>DMService
+valign=center
+bg=magenta</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>885</x><y>170</y><w>130</w><h>40</h></coordinates><panel_attributes>Stop Sync Service
+type=sender
+bg=magenta</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>465</x><y>670</y><w>150</w><h>40</h></coordinates><panel_attributes>Stop Sync Service
+type=receiver
+bg=magenta</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>465</x><y>730</y><w>150</w><h>40</h></coordinates><panel_attributes>Start Sync Service
+type=receiver
+bg=magenta</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>635</x><y>670</y><w>120</w><h>40</h></coordinates><panel_attributes>Stop scheduling</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLObject</id><coordinates><x>635</x><y>720</y><w>140</w><h>140</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>645</x><y>730</y><w>120</w><h>40</h></coordinates><panel_attributes>get Threads from
+web</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>645</x><y>770</y><w>120</w><h>40</h></coordinates><panel_attributes>get Threads
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>645</x><y>810</y><w>120</w><h>40</h></coordinates><panel_attributes>compare</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>825</x><y>750</y><w>140</w><h>40</h></coordinates><panel_attributes>UI is on thread which
+has newer ?
+bg=cyan</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>985</x><y>340</y><w>130</w><h>40</h></coordinates><panel_attributes>Start Sync Service
+type=sender
+bg=magenta</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>475</x><y>820</y><w>120</w><h>40</h></coordinates><panel_attributes>Start scheduling</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>845</x><y>680</y><w>120</w><h>40</h></coordinates><panel_attributes>notify</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>545</x><y>760</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>585</x><y>820</y><w>70</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>50;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>605</x><y>670</y><w>50</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>30;20;10;20</additional_attributes></element><element><id>Relation</id><coordinates><x>765</x><y>820</y><w>60</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>40;20;10;20</additional_attributes></element><element><id>UMLState</id><coordinates><x>765</x><y>220</y><w>80</w><h>40</h></coordinates><panel_attributes>Threads ?
+bg=cyan</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>215</x><y>170</y><w>80</w><h>40</h></coordinates><panel_attributes>Session ?
+bg=cyan</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1195</x><y>200</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1135</x><y>80</y><w>110</w><h>340</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;320;10;30;90;30;90;10</additional_attributes></element><element><id>UMLObject</id><coordinates><x>735</x><y>140</y><w>580</w><h>440</h></coordinates><panel_attributes>DirectMessages Activity
+valign=top</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1115</x><y>250</y><w>50</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;20;30;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1105</x><y>340</y><w>60</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;20;40;20</additional_attributes></element><element><id>Relation</id><coordinates><x>1005</x><y>450</y><w>120</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;30;100;30;100;10</additional_attributes></element><element><id>Relation</id><coordinates><x>895</x><y>460</y><w>50</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;20;30;20</additional_attributes></element><element><id>Relation</id><coordinates><x>835</x><y>230</y><w>240</w><h>210</h></coordinates><panel_attributes>lt=&lt;-
+yes</panel_attributes><additional_attributes>220;190;100;190;100;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>795</x><y>250</y><w>40</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+no</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>UMLState</id><coordinates><x>855</x><y>620</y><w>90</w><h>40</h></coordinates><panel_attributes>OnClick
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>855</x><y>500</y><w>30</w><h>130</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;10;10;110</additional_attributes></element><element><id>Relation</id><coordinates><x>955</x><y>750</y><w>90</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+yes</panel_attributes><additional_attributes>70;20;10;20</additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1035</x><y>970</y><w>110</w><h>40</h></coordinates><panel_attributes>success
+bg=green
+group=28</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1035</x><y>1020</y><w>110</w><h>40</h></coordinates><panel_attributes>interfaces
+bg=gray
+group=28</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1035</x><y>1070</y><w>110</w><h>40</h></coordinates><panel_attributes>DBHelper
+bg=yellow
+group=28</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1165</x><y>970</y><w>110</w><h>40</h></coordinates><panel_attributes>failed
+bg=red
+group=28</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1165</x><y>1020</y><w>110</w><h>40</h></coordinates><panel_attributes>managers
+bg=blue
+group=28</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLUseCase</id><coordinates><x>1165</x><y>1070</y><w>110</w><h>40</h></coordinates><panel_attributes>DMService
+bg=magenta
+group=28</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLObject</id><coordinates><x>1025</x><y>950</y><w>270</w><h>180</h></coordinates><panel_attributes>
+group=28</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>55</x><y>920</y><w>160</w><h>50</h></coordinates><panel_attributes>get Threads
+group=35</panel_attributes><additional_attributes></additional_attributes></element><element><id>Text</id><coordinates><x>255</x><y>1020</y><w>100</w><h>80</h></coordinates><panel_attributes>customelement=
+// Text Elemnt
+// DB Symbol
+drawArc(0,0,width,height*2/5,0,180,true) fg=black bg=#222222 //Parameters (x, y, width, height, start, extent, open)
+drawArc(0,0,width,height*2/5,180,180,true) fg=black //Parameters (x, y, width, height, start, extent, open)
+drawRectangle(0,(height+0.5)/5,width,(height)*3/5-1) fg=#929292 bg=#222222 //Parameters (x, y, width, height)
+drawLine(0,height/5,0,height*4/5)fg=black //Parameters (x1, y1, x2, y2) 
+drawLine(width,height/5,width,height*4/5)fg=black //Parameters (x1, y1, x2, y2) 
+drawArc(0,height*1/5,width,height*2/5,180,180,true) fg=black //Parameters (x, y, width, height, start, extent, open)
+drawArc(0,height*2/5,width,height*2/5,180,180,true) fg=black //Parameters (x, y, width, height, start, extent, open)
+drawArc(0,height*3/5,width,height*2/5,180,180,true) fg=black bg=#222222 //Parameters (x, y, width, height, start, extent, open)
+group=35</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>1025</x><y>750</y><w>120</w><h>40</h></coordinates><panel_attributes>add new message 
+on fly</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>875</x><y>500</y><w>210</w><h>170</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>190;150;190;60;10;60;10;10</additional_attributes></element><element><id>UMLState</id><coordinates><x>1035</x><y>650</y><w>190</w><h>60</h></coordinates><panel_attributes>Show threads 
+ListView + CursorAdapater
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>1255</x><y>660</y><w>90</w><h>40</h></coordinates><panel_attributes>On Message
+Click
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1215</x><y>660</y><w>60</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>40;20;10;20</additional_attributes></element><element><id>UMLState</id><coordinates><x>1175</x><y>750</y><w>170</w><h>40</h></coordinates><panel_attributes>Message is vocal ?
+bg=cyan</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1295</x><y>690</y><w>30</w><h>80</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;60;10;10</additional_attributes></element><element><id>UMLState</id><coordinates><x>1225</x><y>830</y><w>90</w><h>40</h></coordinates><panel_attributes>Play
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1255</x><y>780</y><w>50</w><h>70</h></coordinates><panel_attributes>lt=&lt;-
+yes
+</panel_attributes><additional_attributes>10;50;10;10</additional_attributes></element><element><id>UMLState</id><coordinates><x>1045</x><y>830</y><w>160</w><h>50</h></coordinates><panel_attributes>Update message 
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1195</x><y>840</y><w>50</w><h>40</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;20;30;20</additional_attributes></element><element><id>UMLState</id><coordinates><x>225</x><y>910</y><w>160</w><h>50</h></coordinates><panel_attributes>Update Read-state 
+of message 
+group=35</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>375</x><y>920</y><w>80</w><h>100</h></coordinates><panel_attributes>lt=&lt;&lt;-&gt;&gt;</panel_attributes><additional_attributes>10;10;30;10;30;80;60;80</additional_attributes></element><element><id>UMLState</id><coordinates><x>805</x><y>810</y><w>160</w><h>50</h></coordinates><panel_attributes>update thread
+&amp;&amp;
+add message
+bg=yellow</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>915</x><y>710</y><w>40</w><h>60</h></coordinates><panel_attributes>lt=&lt;-
+no</panel_attributes><additional_attributes>10;10;10;40</additional_attributes></element><element><id>Relation</id><coordinates><x>895</x><y>650</y><w>30</w><h>50</h></coordinates><panel_attributes>lt=&lt;-
+</panel_attributes><additional_attributes>10;10;10;30</additional_attributes></element><element><id>UMLState</id><coordinates><x>55</x><y>970</y><w>160</w><h>50</h></coordinates><panel_attributes>Update message 
+group=35</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>225</x><y>960</y><w>160</w><h>50</h></coordinates><panel_attributes>update thread
+&amp;&amp;
+add message
+group=35</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>90</x><y>730</y><w>120</w><h>40</h></coordinates><panel_attributes>Cipher credentials</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>100</x><y>780</y><w>100</w><h>30</h></coordinates><panel_attributes>make requests</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLObject</id><coordinates><x>40</x><y>570</y><w>390</w><h>260</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLObject</id><coordinates><x>80</x><y>720</y><w>140</w><h>100</h></coordinates><panel_attributes></panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>50</x><y>640</y><w>150</w><h>40</h></coordinates><panel_attributes>start connection
+type=receiver
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLObject</id><coordinates><x>40</x><y>570</y><w>170</w><h>50</h></coordinates><panel_attributes>Login Manager
+valign=center
+bg=blue</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLState</id><coordinates><x>745</x><y>520</y><w>100</w><h>50</h></coordinates><panel_attributes>Update 
+CursorAdapter
+bg=orange</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>805</x><y>560</y><w>30</w><h>270</h></coordinates><panel_attributes>lt=&lt;-
+ 
+</panel_attributes><additional_attributes>10;10;10;250</additional_attributes></element><element><id>Relation</id><coordinates><x>1085</x><y>30</y><w>100</w><h>80</h></coordinates><panel_attributes>lt=-&gt;
+result</panel_attributes><additional_attributes>10;60;40;60;40;10;80;10</additional_attributes></element></diagram>

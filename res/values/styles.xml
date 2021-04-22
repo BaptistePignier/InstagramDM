@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<style name="AppTheme" parent="android:style/Theme.Holo.NoActionBar">
+		<!--<item name="android:colorPrimary">@color/dark_blue</item>-->
+		<item name="android:windowBackground">@color/black</item>
+
+	</style>
+	
+	<style name="ProgessBarTheme" parent="android:style/Widget.Holo.Light.ProgressBar.Horizontal">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        
+        
+	</style>
+</resources>

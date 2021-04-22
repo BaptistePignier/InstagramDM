@@ -1,0 +1,34 @@
+Enregistrement des images bitmap dans sqldatabase
+https://www.worldbestlearningcenter.com/tips/Android-save-image-sqlite-database.htm
+
+
+Broadcast receiver boot
+https://www.vogella.com/tutorials/AndroidBroadcastReceiver/article.html
+
+Build script 
+https://github.com/HemanthJabalpuri/AndroidExplorer/blob/master/build_new.sh
+
+Get json from web 
+http://www.java2s.com/Tutorials/Java/Network_How_to/URL/Get_JSON_from_URL.htm
+
+
+SQLiteOpenHelper : 
+https://www.tutlane.com/tutorial/android/android-sqlite-database-with-examples
+
+
+BroadcastReceiver service to activity 
+https://androidexperinz.com/2012/02/14/communication-between-service-and-activity-part-1/
+
+Background tasks 
+https://stackoverflow.com/a/65108879
+
+Cursor Adapter 
+https://guides.codepath.com/android/Populating-a-ListView-with-a-CursorAdapter#attaching-the-adapter-to-a-listview
+https://stackoverflow.com/questions/21501316/what-is-the-benefit-of-viewholder-pattern-in-android
+
+DB update 
+https://stackoverflow.com/a/45778613
+
+
+Scheduler 
+https://stackoverflow.com/a/29914824
