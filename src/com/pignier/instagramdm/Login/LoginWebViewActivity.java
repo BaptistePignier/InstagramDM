@@ -30,17 +30,10 @@ public class LoginWebViewActivity extends Activity{
 	private final WebChromeClient webChromeClient = new WebChromeClient();
 
 	private final WebViewClient webViewClient = new WebViewClient() {
-		//@Override
-		//public void onPageStarted(final WebView view, final String url, final Bitmap favicon) {
-		//	webViewUrl = url;
-		//}
 
 		@Override
 		public void onPageFinished(final WebView view, final String url) {
-			//webViewUrl = url;
-			
-				
-			
+
 			final String mainCookie = CookieManager.getInstance().getCookie(url);
 			if (mainCookie != null && mainCookie.length() != 0 && ! logged){
 				Log.d(TAG,LOCALTAG+"Page finished");
